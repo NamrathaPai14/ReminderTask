@@ -1,0 +1,58 @@
+@mixin remindercard-styles {
+    .reminder-details {
+        background:#03dac0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 300px;
+        margin: auto;
+        height:330px;
+        text-align: center;
+        font-family: arial;
+
+        .reminder-name {
+            padding: 10px;
+            background:#03dac0;
+            color: black;
+            font-family: sans-serif;
+            font-size: 18px;
+        } 
+        .reminder-time {
+            padding: 10px;
+            background:#03dac0;
+            color: black;
+            font-family: sans-serif;
+            font-size: 12px;
+        } 
+        
+        .reminder-image {
+            position: relative;
+            background:#03dac0;
+            img {
+                height:200px;
+                width:100%;
+            }
+
+            .reminder-delete {
+                background:#03dac0;
+                color:black;
+                font-size:14px;
+                position: absolute;
+                top: 1px;
+                right: 1px;
+                width:15px;
+                height:15px;
+                border-radius:15px;
+                vertical-align:middle;
+                z-index: 100;
+                cursor: pointer;
+            }
+        }
+
+        .reminder-description {
+            padding: 10px;
+            background:#03dac0;
+            font-family: sans-serif;
+            color:black;
+            font-size:15px;
+        }
+    }
+}

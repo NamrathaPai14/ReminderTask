@@ -1,0 +1,128 @@
+@import '../../style/main.scss';
+ 
+@mixin AddReminder-styles {
+    .AddReminder-container {
+        display:flex;
+        flex-direction:column;
+        margin:10px;
+    
+        .form-input {
+            font-family: sans-serif;
+            .form-card {
+                box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+                height: 400px;
+                margin: 6rem auto 8.1rem auto;
+                width: 350px;
+                background: #03dac6;
+                border-radius: 5px;
+        
+                .card-title {
+                    font-family: sans-serif;
+                    letter-spacing: 4px;
+                    padding-bottom: 23px;
+                    padding-top: 13px;
+                    text-align: center;
+                    background: #03dac6;
+        
+                    .title {
+                        background: #03dac6;
+                        font-family: sans-serif;
+                        font-weight:600;
+                    }
+                }
+        
+                .form-input {
+                    align-items: left;
+                    display: flex;
+                    flex-direction: column;
+                    background: #03dac6;
+        
+                    .card-content {
+                        padding: 12px 30px;
+                        background: #03dac6;
+        
+                        input[type=text] {
+                            margin-top: 20px;
+                            border:none;
+                            border-bottom:1px solid black;
+                            background: #03dac6;
+                            font-family: sans-serif;
+                        }
+                        input[type=file] {
+                            float: right;
+                            margin-top: 10px;
+                            background: #03dac6;
+                            font-family: sans-serif;
+                        }
+                        input:focus, textarea:focus {
+                            outline: none;
+                        }
+        
+                        label {
+                            font-family: "Raleway", sans-serif;
+                            font-size: 12pt;
+                            background: #03dac6;
+                            margin-top: 30px;
+                            margin-right:20px;
+                        }
+        
+                        button {
+                            background:black;
+                            border: none;
+                            border-radius: 21px;
+                            box-shadow: 0px 1px 8px #2e312f;
+                            cursor: pointer;
+                            color: #03dac6;
+                            font-family: "Raleway SemiBold", sans-serif;
+                            height: 42.3px;
+                            margin: 0 auto;
+                            margin-top: 20px;
+                            transition: 0.25s;
+                            width: 153px;
+        
+                            .back {
+                                text-decoration:none;
+                                font-family: sans-serif;
+                                color: #03dac6 ;                               
+                            }
+                        }
+        
+                        textarea {
+                            margin-top:10px;
+                            border-width:2px;
+                            color:#03dac6;
+                        }
+                    }
+                }    
+            }    
+        }
+        .AddMenu-back {
+            float:left;
+    
+            .back {
+                text-decoration: none;
+                color: #03dac6;
+                font-family: sans-serif;
+                padding:10px;
+            }
+        }   
+    }       
+}
+@include desktop {
+    @include AddReminder-styles;
+}
+
+@include mobile {
+    @include AddReminder-styles;
+}
+
+@include tablet {
+    @include AddReminder-styles;
+}
+
+        
+
+        
+        
+    
+

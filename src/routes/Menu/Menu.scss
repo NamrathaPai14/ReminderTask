@@ -1,0 +1,70 @@
+@import '../../style/main.scss';
+
+.menu {
+    .display-button {
+        display:flex;
+        margin:10px;
+
+        .display-add {
+            text-decoration: none;
+            padding:10px;
+            font-family: sans-serif;
+            color:#03dac6;
+        }
+    }
+ 
+    &-container {
+        @mixin menu-styles {
+            .display-menu {
+                margin: 10px; 
+            
+                .menu-item {
+                    position:relative;
+                    width: 5rem;
+                    height: 1rem;
+                    background: #03dac6;
+                    padding: 20px; 
+            
+                    .menu-items {
+                        text-align: center;
+                        text-decoration:none;
+                        background: #03dac6; 
+                        font-family: sans-serif;
+                        color : black;
+                    }
+            
+                    .menu-delete {
+                        background: #03dac6;
+                        color: black;
+                        font-size:20px;
+                        position: absolute;
+                        top: 1px;
+                        right: 1px;
+                        z-index: 100;
+                        cursor: pointer;
+                    }
+                     
+                }
+            }
+        
+        }
+        @include desktop {   
+            display:flex;
+            justify-content: center;
+            @include menu-styles;
+            
+        }
+        @include mobile {   
+            display:flex;
+            margin-left:100px;
+            flex-direction: column;
+            @include menu-styles;
+        }
+
+        @include tablet {   
+            display:flex;
+            justify-content: center;
+            @include menu-styles;
+        }
+    }
+}

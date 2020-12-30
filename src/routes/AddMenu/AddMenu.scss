@@ -1,0 +1,117 @@
+@import '../../style/main.scss';
+
+@mixin Addmenu-styles {
+    .AddMenu-container {
+        display:flex;
+        flex-direction:column;
+        margin:10px;
+        
+        .AddMenu-input {
+            font-family: sans-serif;
+    
+            .input-card {
+                box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+                height: 310px;
+                margin: 6rem auto 8.1rem auto;
+                width: 330px;
+                background: #03dac6;
+                border-radius: 5px;
+    
+                .card-title {
+                    font-family: sans-serif;
+                    letter-spacing: 4px;
+                    padding-bottom: 23px;
+                    padding-top: 13px;
+                    text-align: center;
+                    background: #03dac6;
+    
+                    .title {
+                        background: #03dac6;
+                        font-family: sans-serif;
+                        font-weight:600;
+                    }
+                }
+                .input-name {
+                    align-items: left;
+                    display: flex;
+                    flex-direction: column;
+                    background: #03dac6;
+    
+                    .card-content {
+                        padding: 12px 44px;
+                        background: #03dac6;
+        
+                        input {
+                            border:none;
+                            border-bottom:1px solid black;
+                            background: #03dac6;
+                            font-family: sans-serif;
+                        }
+                        input:focus {
+                            outline: none;
+                        }
+    
+                        label {
+                            font-family: "Raleway", sans-serif;
+                            font-size: 12pt;
+                            background: #03dac6;
+                            margin-top: 20px;
+                            margin-right:20px;
+                        }
+    
+                        button {
+                            background:black;
+                            border: none;
+                            border-radius: 21px;
+                            box-shadow: 0px 1px 8px #2e312f;
+                            cursor: pointer;
+                            color: #03dac6;
+                            font-family: "Raleway SemiBold", sans-serif;
+                            height: 42.3px;
+                            margin: 0 auto;
+                            margin-top: 50px;
+                            transition: 0.25s;
+                            width: 153px;
+
+                            .back {
+                                text-decoration:none;
+                                font-family: sans-serif;
+                                color: #03dac6 ;                }                
+                            }
+                        }
+                    }    
+                }    
+            }
+        
+    
+        .AddMenu-back {
+            float:left;
+    
+            .back {
+                text-decoration: none;
+                color: #03dac6;
+                font-family: sans-serif;
+                padding:10px;
+            }
+        }   
+    }
+}
+@include desktop {
+    @include Addmenu-styles;
+}
+
+@include mobile {
+    @include Addmenu-styles;
+}
+
+@include tablet {
+    @include Addmenu-styles;
+}
+
+
+
+
+
+
+
+  

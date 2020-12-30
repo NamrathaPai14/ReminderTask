@@ -1,0 +1,40 @@
+@import '../../style/main.scss';
+
+@mixin reminder-styles {
+    .reminder-container {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        margin: 10px;
+    
+        .reminder-links {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .reminder-links a {
+            text-decoration: none;
+            font-family: sans-serif;
+            color: #03dac0;
+            background: black;
+            padding: 10px;
+        }
+    }
+}
+
+
+@include desktop {
+    @include reminder-styles;
+}
+
+@include mobile {
+    @include reminder-styles; 
+}
+
+@include tablet {
+    @include reminder-styles;
+} 
+    
+    
+
+
